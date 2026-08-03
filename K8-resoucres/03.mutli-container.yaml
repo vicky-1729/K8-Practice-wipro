@@ -10,3 +10,4 @@ spec:
     image: nginx
   - name: nginx-two
     image: almalinux
+    command: [ "sleep", "3600" ]
