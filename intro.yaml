@@ -1,0 +1,29 @@
+# key-value pairs
+name: nginx
+replicas: 2
+
+
+---
+
+address:
+  district: "Bangalore"
+  city: "majestic"
+  telephone:
+    number:  123456 #number
+    sim: airtel 
+    port-number: 8080
+
+
+#List
+shoipping:
+  - name: "flipkart" #string
+    type: "ecommerce"
+
+  - name: "amazon"
+    type: "ecommerce"
+
+  - name: "myntra"
+    type: "ecommerce"
+
+  - name: "bigbasket"
+    type: "grocery"
