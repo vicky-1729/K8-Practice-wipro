@@ -7,6 +7,5 @@ spec:
   - name: nginx-container
     image: nginx
     envFrom:
-      - sceretRef:
-          name: secret-pod
-    
+    - secretRef:
+        name: secret-pod
