@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: label-pod
   labels:
-    environment: production
+    environment: productions
     project: roboshop
     component: backend
     app: nodejs

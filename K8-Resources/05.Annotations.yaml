@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: annotation-pod
+  labels:
+    # internal resources
+    environment: prod
+    project: roboshop
+    component: backend
+    app: nodejs
+
+  annotations:
+    # external resources
+    description: "This is a pod for nodejs application"
+    owner: "RoboShop Team"
+spec:
+  containers:
+  - name: label-pod-c1
+    image: nginx
