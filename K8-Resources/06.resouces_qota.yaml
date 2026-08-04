@@ -13,11 +13,12 @@ spec:
   - name: nginx-resources
     image: nginx
     resources:
-      requests: # soft limit
+      requests:
+        # soft limit
         memory: "64Mi"
         cpu: "250m"
-      limits: # hard limit
+      limits:
+        # hard limit
         memory: "128Mi"
         cpu: "500m"
-
         #OOM
