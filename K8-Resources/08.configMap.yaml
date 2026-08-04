@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: pod-configmap
+data:
+  catalogue: "vsvicky.mongodb.catalogue"
+  mongodb: " vsvicky.catalogue"
