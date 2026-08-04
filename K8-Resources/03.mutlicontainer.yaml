@@ -2,14 +2,13 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: web-appliaction
+  name: web-application
 spec:
-  # mutlicontainer pod
+  # multi-container pod
   containers:
   - name: user
     image: nginx
-    # daemon  pay service
+    # daemon payment service
   - name: logs
     image: almalinux
-    command: ["sleep","100000000"]
-     # daemon cart
+    command: [ "sleep", "100000000" ] # daemon cart
