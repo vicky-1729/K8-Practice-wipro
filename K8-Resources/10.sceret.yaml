@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: secret-pod
+type: Opaque
+data:
+  value: YWRtaW5AMTIz
