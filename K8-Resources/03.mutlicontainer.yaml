@@ -1,0 +1,12 @@
+#def pod
+apiVersion: v1
+kind: Pod
+metadata:
+  name: web-appliaction
+spec:
+  # mutlicontainer pod
+  containers:
+  - name: user
+    image: nginx
+  - name: logs
+    image: almalinux
