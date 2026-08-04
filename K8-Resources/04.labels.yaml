@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: label-pod
+  labels:
+    environment: production
+    project: roboshop
+    component: backend
+    app: nodejs
+spec:
+  containers:
+  - name: label-pod-c1
+    image: nginx

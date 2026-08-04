@@ -8,8 +8,8 @@ spec:
   containers:
   - name: user
     image: nginx
-    # daemon
+    # daemon  pay service
   - name: logs
     image: almalinux
     command: ["sleep","100000000"]
-     # daemon
+     # daemon cart
