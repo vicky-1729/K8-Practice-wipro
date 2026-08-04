@@ -1,0 +1,9 @@
+#def pod
+apiversion: v1
+kind: Pod
+metadata:
+  name: nginx-01
+spec:
+  containers:
+  - name: nginx-container
+    image: nginx
