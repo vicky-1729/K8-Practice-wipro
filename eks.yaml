@@ -12,3 +12,5 @@ managedNodeGroups:
   instanceTypes: [ "t3.medium" ] # EC2 instance types for worker nodes
   desiredCapacity: 2 # Number of nodes to launch
   spot: true # Use spot instances for cost savings 
+
+# eksctl create cluster -f eks.yaml
