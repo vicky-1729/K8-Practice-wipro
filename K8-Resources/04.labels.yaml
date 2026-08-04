@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: label-pod
   labels:
-  #human
+    #not for human
     environment: productions
     project: roboshop
     component: backend
