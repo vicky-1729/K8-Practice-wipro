@@ -1,0 +1,26 @@
+# Important: pod name must be unique within a namespace.
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-readiness
+
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+
+    ports:
+    - containerPort: 80
+
+    readinessProbe:
+      httpGet:
+        path: /
+        port: 80
+
+      initialDelaySeconds: 10
+      periodSeconds: 5
+
+# Commands:
+#   kubectl get pods
+#   kubectl describe pod nginx-readiness
+#   kubectl logs nginx-readiness
