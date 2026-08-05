@@ -10,16 +10,13 @@ metadata:
 spec:
   selector:
     # pod labels
-      app: philips
-      company: wipro
-      project: roboshop
+    app: philips
+    company: wipro
+    project: roboshop
   ports:
   - protocol: TCP
     port: 80 #service port
     targetPort: 80 # container port
-
-
-
 ---
 
 apiVersion: v1
