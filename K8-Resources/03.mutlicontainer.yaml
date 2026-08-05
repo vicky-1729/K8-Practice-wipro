@@ -12,3 +12,4 @@ spec:
   - name: logs
     image: almalinux
     command: [ "sleep", "100000000" ] # daemon cart
+#kubectl exec -it podname -c container -- bash
