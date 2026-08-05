@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
         - name: nginx-dp
-          image: nginx:stable-perl
+          image: nginx
 
 
 # Commands:
