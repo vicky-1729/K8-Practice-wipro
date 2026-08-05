@@ -1,0 +1,31 @@
+# Important: ReplicaSet pods are managed by selector labels, not by name.
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: nginx-rp
+  labels:
+    app: backend
+    tier: backend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      env: dev
+      project: roboshop
+      purpose: replicas-demo
+  template:
+  #pod defination
+    metadata:
+      labels:
+        env: dev
+        project: roboshop
+        purpose: replicas-demo
+    spec:
+      containers:
+        - name: nginx
+          image: nginx
+
+
+# Commands:
+#   kubectl get rs
+#   kubectl describe rs nginx-rp
