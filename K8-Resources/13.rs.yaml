@@ -1,6 +1,6 @@
 # Important: ReplicaSet pods are managed by selector labels, not by name.
 apiVersion: apps/v1
-kind: ReplicaSet
+kind: Deployment
 metadata:
   name: nginx-rp
   labels:
